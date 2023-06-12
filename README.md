@@ -27,9 +27,9 @@ The dataset used for this analysis consists of Airbnb listings in Seattle, WA. T
 | Variable Name | Description | Units | Type | Notes |
 | --- | --- | --- | --- | --- |
 | `id` | ID on the listing | ID | numeric |  |
-| `name` | Title or name of the listing | Text | String |  |
+| `name` | Title or name of the listing | Text | String | dropped during data cleaning |
 | `host_id` | ID of the host | ID | numeric |  |
-| `host_name` | Name of the host | Text | String |  |
+| `host_name` | Name of the host | Text | String | dropped during data cleaning |
 | `neighbourhood_group` | Group of neighborhoods the listing belongs to | Text | String |  |
 | `neighbourhood` | Specific neighborhood the listing is located in | Text | String |  |
 | `latitude` | Latitude coordinate of the listing | Degrees | numeric |  |
@@ -38,7 +38,7 @@ The dataset used for this analysis consists of Airbnb listings in Seattle, WA. T
 | `price` | Rental price per night | Currency | numeric |  |
 | `minimum_nights` | Minimum number of nights required for booking | Nights | numeric |  |
 | `number_of_reviews` | Total number of reviews for the listing | Count | numeric |  |
-| `last_review` | Date of the last review | Date | Date |  |
+| `last_review` | Date of the last review | Date | Date | dropped during data cleaning |
 | `reviews_per_month` | Average number of reviews per month | Count | numeric |  |
 | `calculated_host_listings_count` | Number of listings by the host | Count | numeric |  |
 | `availability_365` | Number of days the listing is available in a year | Days | numeric |  |
@@ -46,6 +46,7 @@ The dataset used for this analysis consists of Airbnb listings in Seattle, WA. T
 | `license` | License code or identifier | Text | String |  |
 | `name_processed` | Title or name of the listing post text processing | Text | String | new column in [`cleaned_data.csv`](./data/cleaned_data.csv) |
 | `assumed_gender` | Femal or Male gender | Text | String | new column in [`cleaned_data.csv`](./data/cleaned_data.csv) |
+| `total_of_host_listings_count` | Number of listings by the host | Count | numeric | new column in [`cleaned_data.csv`](./data/cleaned_data.csv) |
 | `location_proximity` | 'latitude' * 'longitude' | Score | numeric | new column in [`scaled_data.csv`](./data/scaled_data.csv)|
 | `price_log` | Price column after Log Transformation | Score | numeric | new column in [`scaled_data.csv`](./data/scaled_data.csv) |
 | `income` | (365 - 'availability_365') * 'price' | Currency | numeric | new column considered in RS notebook |
