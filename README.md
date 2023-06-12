@@ -77,7 +77,7 @@ Moving forward, the recommendation system implemented in the provided code promp
 - The implemented recommendation system prompts users to input parameters including the category of interest, specific attribute, and desired values. It leverages a dataset of listings to calculate cosine similarity between items based on the selected parameters. Subsequently, the system generates recommendations by identifying the most similar listings and sorting them based on the user's specified attribute value. The top three recommendations are displayed, offering personalized suggestions for listings that closely align with the user's preferences.
 
 
-## Conclusoion:
+## Conclusion:
 
 Through our analysis, we have uncovered several key findings related to the demand patterns of Airbnb listings in Seattle. Firstly, we identified the most important features that influence demand. In the non-scaled data analysis, features such as total_of_host_listings_count, reviews_per_month, price, latitude, and longitude emerged as the top contributors. Additionally, factors like number_of_reviews, number_of_reviews_ltm, minimum_nights, assumed_gender, and specific neighborhoods such as University District played significant roles in predicting availability patterns.
 
