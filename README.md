@@ -1,4 +1,4 @@
-# Airbnb Feature Importance Analysis & Recommendation System Project
+# Airbnb Project: Feature Importance Analysis & Recommendation System
 
 ## Problem Statement:
 
