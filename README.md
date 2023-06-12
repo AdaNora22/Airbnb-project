@@ -91,7 +91,7 @@ Lastly, based on Kendall's Rank correlation test, there was evidence of a weak n
 
 Overall, these findings provide valuable insights into the demand patterns of Airbnb listings in Seattle, allowing property owners to make informed decisions regarding rental prices, understand the factors influencing demand, and optimize their rental income on the platform.
 
-## Recommendations for Future Analysis
+## Recommendations for Future Analysis:
 
 1. **Incorporate Text Data:** Utilize textual data from reviews and listing names to extract meaningful insights. Perform text preprocessing techniques such as tokenization, removal of stop words, and stemming/lemmatization to enhance the analysis of these text-based features.
 
