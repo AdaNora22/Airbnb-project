@@ -40,10 +40,10 @@ The dataset used for this analysis consists of Airbnb listings in Seattle, WA. T
 | `number_of_reviews` | Total number of reviews for the listing | Count | numeric |  |
 | `last_review` | Date of the last review | Date | Date | dropped during data cleaning |
 | `reviews_per_month` | Average number of reviews per month | Count | numeric |  |
-| `calculated_host_listings_count` | Number of listings by the host | Count | numeric |  |
+| `calculated_host_listings_count` | Number of listings by the host | Count | numeric | dropped during data cleaning |
 | `availability_365` | Number of days the listing is available in a year | Days | numeric |  |
 | `number_of_reviews_ltm` | Number of reviews in the last 12 months | Count | numeric |  |
-| `license` | License code or identifier | Text | String |  |
+| `license` | License code or identifier | Text | String | dropped after data cleaning process |
 | `name_processed` | Title or name of the listing post text processing | Text | String | new column in [`cleaned_data.csv`](./data/cleaned_data.csv) |
 | `assumed_gender` | Femal or Male gender | Text | String | new column in [`cleaned_data.csv`](./data/cleaned_data.csv) |
 | `total_of_host_listings_count` | Number of listings by the host | Count | numeric | new column in [`cleaned_data.csv`](./data/cleaned_data.csv) |
