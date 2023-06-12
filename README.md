@@ -47,8 +47,8 @@ The dataset used for this analysis consists of Airbnb listings in Seattle, WA. T
 | `name_processed` | Title or name of the listing post text processing | Text | String | new column in [`cleaned_data.csv`](./data/cleaned_data.csv) |
 | `assumed_gender` | Femal or Male gender | Text | String | new column in [`cleaned_data.csv`](./data/cleaned_data.csv) |
 | `location_proximity` | 'latitude' * 'longitude' | Score | numeric | new column in [`scaled_data.csv`](./data/scaled_data.csv)|
-| `price_log` | Price column after Log Transformation | Score | numeric | new column |
-| `income` | (365 - 'availability_365') * 'price' | Currency | numeric | new column |
+| `price_log` | Price column after Log Transformation | Score | numeric | new column in [`scaled_data.csv`](./data/scaled_data.csv) |
+| `income` | (365 - 'availability_365') * 'price' | Currency | numeric | new column considered in RS notebook |
 
 
 
