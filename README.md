@@ -11,15 +11,19 @@ The dataset used for this analysis consists of Airbnb listings in Seattle, WA. T
 
 ## Data Disctionary:
 
-#### Sources:
+#### Original Sources:
 - [`airbnb_listings.csv`](./data/seattle_airbnb_listings.csv): Seattle AirBnb data used during this project
 
+#### Three Created Datasets:
+- [`cleaned_data.csv`](./data/cleaned_data.csv): Clean data after Data Cleaning process
+- [`encoded_data.csv`](./data/data_ohe_outliers_drop_cols.csv): Data scaved during Feature Engenering process with encoded categorical variables and no outliers
+- [`scaled_data.csv`](./data/scaled_data.csv): Data saved in the end of Feature Engenering with scaling and new columns such as 'location_proximity' and 'price_log'
 
 #### Size of datasets:
 - seattle_airbnb_listings.csv has 6376 rows and 18 columns so its' total memory weigth is 1122KB
 
 
-#### Data dictionary for all_test_dateset_merged_together cloumns that I ended up useing:
+#### Data dictionary for All Used Cloumns:
 | Variable Name | Description | Units | Type | Notes |
 | --- | --- | --- | --- | --- |
 | `id` | ID on the listing | ID | numeric |  |
@@ -40,6 +44,12 @@ The dataset used for this analysis consists of Airbnb listings in Seattle, WA. T
 | `availability_365` | Number of days the listing is available in a year | Days | numeric |  |
 | `number_of_reviews_ltm` | Number of reviews in the last 12 months | Count | numeric |  |
 | `license` | License code or identifier | Text | String |  |
+| `name_processed` | Title or name of the listing post text processing | Text | String | new column in [`cleaned_data.csv`](./data/cleaned_data.csv) |
+| `assumed_gender` | Femal or Male gender | Text | String | new column in [`cleaned_data.csv`](./data/cleaned_data.csv) |
+| `location_proximity` | 'latitude' * 'longitude' | Score | numeric | new column in [`scaled_data.csv`](./data/scaled_data.csv)|
+| `price_log` | Price column after Log Transformation | Score | numeric | new column |
+| `income` | (365 - 'availability_365') * 'price' | Currency | numeric | new column |
+
 
 
 ## Background research:
